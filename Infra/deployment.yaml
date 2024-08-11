@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: python-app
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: python-app
+    spec:
+      containers:
+      - name: python-app
+        image: benn1440/python_app:Latest
+        ports:
+        - containerPort: 5001
+      env:
+      - name: Welcome_Message
+        valueFrom:
+           configMapKeyRef:
+              name: python-app-config
+              key: Welcome_message
+      - name: Python-aws-cred
+          valueFrom:
+           secret:
+             secretName: python-app-secret
+             key: AWS_Cred
