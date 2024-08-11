@@ -8,3 +8,8 @@ To implement this Infrastructure, I used AWS VPC module<br><br>
 https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
 
 ![image](https://github.com/user-attachments/assets/591e2672-36c4-4e34-b061-d08e967bfcc9)
+
+# Errors Experienced 
+
+Series of Failures on Pipeline, due to secret keys, and indentation errors. 
+![image](https://github.com/user-attachments/assets/2a4a4c61-2ae0-47eb-854b-73ec7b970e89)
