@@ -19,3 +19,6 @@ Series of Failures on Pipeline, due to secret keys, and indentation errors.
 
 ![image](https://github.com/user-attachments/assets/2c59b778-be98-4961-9669-09ca177c0495)
 
+# Terraform resources created
+$ terraform apply --auto-approve
+![image](https://github.com/user-attachments/assets/8404af46-7411-489f-ac50-d7325ca35893)
