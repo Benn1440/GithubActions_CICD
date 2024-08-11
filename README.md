@@ -9,6 +9,9 @@ https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
 
 ![image](https://github.com/user-attachments/assets/591e2672-36c4-4e34-b061-d08e967bfcc9)
 
+![image](https://github.com/user-attachments/assets/642e34e4-9076-44e5-9ccc-ddf0fd73d140)
+
+
 # Errors Experienced 
 
 Series of Failures on Pipeline, due to secret keys, and indentation errors. 
