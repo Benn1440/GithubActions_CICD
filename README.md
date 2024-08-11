@@ -22,3 +22,8 @@ Series of Failures on Pipeline, due to secret keys, and indentation errors.
 # Terraform resources created
 $ terraform apply --auto-approve
 ![image](https://github.com/user-attachments/assets/8404af46-7411-489f-ac50-d7325ca35893)
+
+# AWS Instance 
+
+![image](https://github.com/user-attachments/assets/0748e99f-f2f5-4531-84d2-cd38f2556539)
+ 
