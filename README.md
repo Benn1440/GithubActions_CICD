@@ -26,4 +26,14 @@ $ terraform apply --auto-approve
 # AWS Instance 
 
 ![image](https://github.com/user-attachments/assets/0748e99f-f2f5-4531-84d2-cd38f2556539)
+
+# Accessing the Instance
+![image](https://github.com/user-attachments/assets/ff0c99b0-4230-40cd-8670-0591f3c27e5c)<br><br>
+ 
+$ minikube 
+ 
+![image](https://github.com/user-attachments/assets/f1a3a443-71ac-48a9-9225-d99668395546)
+
+
+
  
