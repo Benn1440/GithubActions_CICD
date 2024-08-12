@@ -38,6 +38,11 @@ $ Install kubectl on Server
 
 ![image](https://github.com/user-attachments/assets/4c5d98cd-97ab-467f-8e26-3160798d1a8b)
 
+# Troublueshooting CI/CD pipeline issue
+
+![image](https://github.com/user-attachments/assets/25beba0e-ce94-42a3-8576-0fb511bb9e49)
+
+
 
 
 
