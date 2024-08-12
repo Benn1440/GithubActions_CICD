@@ -32,7 +32,12 @@ $ terraform apply --auto-approve
  
 $ minikube 
  
-![image](https://github.com/user-attachments/assets/f1a3a443-71ac-48a9-9225-d99668395546)
+![image](https://github.com/user-attachments/assets/f1a3a443-71ac-48a9-9225-d99668395546)<br><br>
+
+$ Install kubectl on Server
+
+![image](https://github.com/user-attachments/assets/4c5d98cd-97ab-467f-8e26-3160798d1a8b)
+
 
 
 
