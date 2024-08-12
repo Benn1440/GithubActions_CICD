@@ -42,6 +42,7 @@ $ Install kubectl on Server
 
 ![image](https://github.com/user-attachments/assets/25beba0e-ce94-42a3-8576-0fb511bb9e49)
 
+![Screenshot 2024-08-12 at 15 03 58](https://github.com/user-attachments/assets/e286ab67-3bcd-46b3-8117-f86227a9a2cd)
 
 
 
