@@ -45,9 +45,9 @@ jobs:
           # echo "Instance IP: ${{ secrets.INSTANCE_IP }}"
           ssh-keyscan -H ${{ secrets.INSTANCE_IP }} >> ~/.ssh/known_hosts || true
       
-      - name: Test SSH Connection
-        run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@${{ secrets.INSTANCE_IP }} "echo Connection Successful"
+      # - name: Test SSH Connection
+      #   run: |
+      #     ssh -o StrictHostKeyChecking=no ec2-user@${{ secrets.INSTANCE_IP }} "echo Connection Successful"
 
       - name: Deploy to Minikube
         run: |
