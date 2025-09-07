@@ -28,33 +28,33 @@ jobs:
           push: true
           tags: benn1440/python_app:Latest
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+  # deploy:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v2
 
-      - name: Set up SSH agent/SSH into EC2 
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.SSH_KEY }}
+  #     - name: Set up SSH agent/SSH into EC2 
+  #       uses: webfactory/ssh-agent@v0.5.3
+  #       with:
+  #         ssh-private-key: ${{ secrets.SSH_KEY }}
 
-      - name: Add EC2 instance to known hosts
-        run: |
-          # echo "Instance IP: ${{ secrets.INSTANCE_IP }}"
-          ssh-keyscan -H ${{ secrets.INSTANCE_IP }} >> ~/.ssh/known_hosts || true
+  #     - name: Add EC2 instance to known hosts
+  #       run: |
+  #         # echo "Instance IP: ${{ secrets.INSTANCE_IP }}"
+  #         ssh-keyscan -H ${{ secrets.INSTANCE_IP }} >> ~/.ssh/known_hosts || true
       
       # - name: Test SSH Connection
       #   run: |
       #     ssh -o StrictHostKeyChecking=no ec2-user@${{ secrets.INSTANCE_IP }} "echo Connection Successful"
 
-      - name: Deploy to Minikube
-        run: |
-          scp -r kubernetes ubuntu@${{ secrets.INSTANCE_IP }}:~/kubernetes
-          ssh ubuntu@${{ secrets.INSTANCE_IP }} << 'EOF'
-          kubectl apply -f ~/kubernetes/secret.yaml
-          kubectl apply -f ~/kubernetes/configmap.yaml
-          kubectl apply -f ~/kubernetes/service.yaml
-          kubectl apply -f ~/kubernetes/deployment.yaml
-          EOF
+      # - name: Deploy to Minikube
+      #   run: |
+      #     scp -r kubernetes ubuntu@${{ secrets.INSTANCE_IP }}:~/kubernetes
+      #     ssh ubuntu@${{ secrets.INSTANCE_IP }} << 'EOF'
+      #     kubectl apply -f ~/kubernetes/secret.yaml
+      #     kubectl apply -f ~/kubernetes/configmap.yaml
+      #     kubectl apply -f ~/kubernetes/service.yaml
+      #     kubectl apply -f ~/kubernetes/deployment.yaml
+      #     EOF
