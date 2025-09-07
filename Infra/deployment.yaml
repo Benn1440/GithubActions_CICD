@@ -17,14 +17,14 @@ spec:
         image: benn1440/python_app:Latest
         ports:
         - containerPort: 3001
-      env:
-      - name: Welcome_Message
-        valueFrom:
-           configMapKeyRef:
-              name: python-app-config
-              key: Welcome_message
-      - name: Python-aws-cred
-          valueFrom:
-           secret:
-             secretName: python-app-secret
-             key: AWS_Cred
+      # env:
+      # - name: Welcome_Message
+      #   valueFrom:
+      #      configMapKeyRef:
+      #         name: python-app-config
+      #         key: Welcome_message
+      # - name: Python-aws-cred
+      #     valueFrom:
+      #      secret:
+      #        secretName: python-app-secret
+      #        key: AWS_Cred
