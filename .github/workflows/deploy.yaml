@@ -26,7 +26,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: benn1440/python_app:Latest
+          tags: benn1440/python_app:latest
 
   # deploy:
   #   needs: build
