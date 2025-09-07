@@ -28,6 +28,10 @@ jobs:
           push: true
           tags: benn1440/python_app:latest
 
+      - name: Deploy to Kubernetes
+        run: |
+          kubectl apply -f Infra/deployment.yaml
+          kubectl apply -f Infra/service.yaml
   # deploy:
   #   needs: build
   #   runs-on: ubuntu-latest
@@ -51,7 +55,7 @@ jobs:
 
       # - name: Deploy to Minikube
       #   run: |
-      #     scp -r kubernetes ubuntu@${{ secrets.INSTANCE_IP }}:~/kubernetes
+      #    scp -r kubernetes ubuntu@${{ secrets.INSTANCE_IP }}:~/kubernetes
       #     ssh ubuntu@${{ secrets.INSTANCE_IP }} << 'EOF'
       #     kubectl apply -f ~/kubernetes/secret.yaml
       #     kubectl apply -f ~/kubernetes/configmap.yaml
